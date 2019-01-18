@@ -13,7 +13,7 @@ gulp.task('less', function () {
     var stream = new MergeStream();
 
     _.forEach(config.sources.less, function (group) {
-        stream.add( processLess(group.files, group.out) );
+        stream.add(processLess(group.files, group.out));
     });
 
     return stream;
